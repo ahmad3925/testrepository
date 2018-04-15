@@ -109,7 +109,7 @@ public class Guess
 			} else if (guess == randInt) {
 				System.out.println(guess + " is currect");
 				guessed = true;
-				System.out.println("It took you\n" + count2 + " ties");
+				System.out.println("It tooks you\n" + count2 + " ties");
 			}
 		}
 		
