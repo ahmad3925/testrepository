@@ -74,6 +74,7 @@ else
 
     double i = input.nextInt();
     double j = i*i;
+    try {
     while (i != -1){
         num.add(i);
         j = j/i;
@@ -85,6 +86,9 @@ else
     }
     System.out.println("The total division is: " + j);
  }
+catch(ArithmeticException e){
+	System.out.println("Con't divide by 0");
+}
 input.close();
 }
-}
+}}
