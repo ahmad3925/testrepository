@@ -86,7 +86,7 @@ else
     }
     System.out.println("The total division is: " + j);
  }
-catch(ArithmeticException e){
+catch(Exception e){
 	System.out.println("Con't divide by 0");
 }
 input.close();
