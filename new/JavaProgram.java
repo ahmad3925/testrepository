@@ -8,7 +8,8 @@ public static void main(String[] args) {
     
 	Scanner input = new Scanner(System.in);
     ArrayList<Integer> numbers = new ArrayList<Integer>();
-    
+    ArrayList<Double> num = new ArrayList<Double>();
+       
 System.out.println("choose operation\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division");
 int n= input.nextInt();
 if(n==1)
@@ -35,11 +36,11 @@ else if(n==2)
 	System.out.print("Please enter integer values (-1 to to display numbers & total subtraction): ");
 
     int i = input.nextInt();
-    int j = 0;
+    int j = 2*i;
 
     while (i != -1) {
         numbers.add(i);
-        j -= i;
+        j = j-i;
         i = input.nextInt();
     }
     System.out.println("Entered Numbers: ");
@@ -54,7 +55,7 @@ else if(n==3)
 	System.out.print("Please enter integer values (-1 to to display numbers & total multiplicaion): ");
 
     int i = input.nextInt();
-    int j = 0;
+    int j = 1;
 
     while (i != -1) {
         numbers.add(i);
@@ -71,12 +72,11 @@ else
 {
 	System.out.print("Please enter integer values (-1 to to display numbers & total diivision): ");
 
-    int i = input.nextInt();
-    int j = 0;
-
+    double i = input.nextInt();
+    double j = i*i;
     while (i != -1){
-        numbers.add(i);
-        j /= i;
+        num.add(i);
+        j = j/i;
         i = input.nextInt();
     }
     System.out.println("Entered Numbers: ");
@@ -85,5 +85,6 @@ else
     }
     System.out.println("The total division is: " + j);
  }
+input.close();
 }
 }
