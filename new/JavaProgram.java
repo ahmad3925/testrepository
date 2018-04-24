@@ -1,10 +1,9 @@
 import java.util.ArrayList;
-
 import java.util.Scanner;
 
 class JavaProgram
 {
-public static void main(String[] args) {
+public static void main(String[] args)throws Exception {
     
 	Scanner input = new Scanner(System.in);
     ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -40,7 +39,7 @@ else if(n==2)
 
     while (i != -1) {
         numbers.add(i);
-        j = j-i;
+        j -= i;
         i = input.nextInt();
     }
     System.out.println("Entered Numbers: ");
@@ -77,7 +76,7 @@ else
     try {
     while (i != -1){
         num.add(i);
-        j = j/i;
+        j /= i;
         i = input.nextInt();
     }
     System.out.println("Entered Numbers: ");
